@@ -1,0 +1,9 @@
+echo "enter a number"
+read n
+num=$(($n%2))
+if [ $num -eq 0 ]
+then
+echo "EVEN NUMBER"
+else
+echo "ODD NUMBER"
+fi

@@ -1,0 +1,22 @@
+echo "Enter the 3 subject marks for the student"
+read m1 m2 m3 
+sum1=`expr $m1 + $m2 + $m3`
+echo "Sum of 5 subjects are: " $sum1
+per=`expr $sum1 / 3`
+echo " Percentage: " $per
+if [ $per -ge 90 ]
+then
+echo "Grade O"
+elif [ $per -ge 80 ]
+then
+echo "Grade A"
+elif [ $per -ge  70 ]
+then
+echo "Grade B"
+elif [ $per -ge  60 ]
+then
+echo "Grade C"
+
+else
+     echo "You get Fail"
+fi
